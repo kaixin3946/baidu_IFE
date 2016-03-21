@@ -2,9 +2,45 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>task3_三栏式布局</title>
+    <style>
+        body{margin: 0;padding: 0;}
+        .container{width: 100%;background-color: #eee;border: 1px solid #999;position: absolute;overflow: hidden;
+            min-width: 600px;width:expression(document.body.clientWidth < 400? "400px": "auto" );}
+        .team{width: 200px;height: 120px;border:1px solid #999;float:left;margin:20px 0 0 20px;background-color: white;}
+        .team img{float: left;margin: 20px 0 0 20px;}
+        .team p{margin: 20px 20px 0 10px;float: right;}
+        .person{width: 120px;padding-bottom:20px;border: 1px solid #999;float: right;margin: 20px 20px 20px 0;background-color: white;}
+        .person img{margin: 20px 20px 0 20px;}
+        .teamIntro{padding:20px 160px 0 240px;}
+        .teamIntro .context{margin: 0 auto;border: 1px solid #999;padding: 0 20px 20px 20px;background-color: white;}
+
+    </style>
 </head>
 <body>
-
+    <div class="container">
+        <div class="team">
+            <img src="img/个人logo.jpg" />
+            <p>团队名称</p>
+        </div>
+        <div class="person">
+            <img src="img/个人logo.jpg" />
+            <img src="img/个人logo.jpg" />
+            <img src="img/个人logo.jpg" />
+            <img src="img/个人logo.jpg" />
+        </div>
+        <div class="teamIntro">
+            <div class="context">
+                <h3>团队介绍</h3>
+                <p>为了打造最佳创业团队，在选人方面要考虑到队员的年龄互补、知识互补、能力互补、性格互补、气质互补、性别互补等
+                    方面，从各个专业挑选人才，因为不是每一个人都适合在创业里工作。在选择队员时不仅要考虑能力和技能，还要考虑队员
+                    的个人偏好和个性。创业团队每一个成员的个性对团队行为都有很大影响。如果队员性格普遍外向、待人随和、责任心强、
+                    感情稳定，那将是团队的一笔大财富。如果团队成员很灵活，可以担任彼此的工作，这对团队来说更是一项明显的增值。极
+                    大地提高了团队的适应性，使团队之间的依赖性减少。因此。在选择队员时要选择那些具有灵活性的，然后对队员进行交叉
+                    培训，让每个创业团队的队员对各方面的知识都有涉及，让他们可以承担彼此的工作，这样使团队的长远绩效得以提高。
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

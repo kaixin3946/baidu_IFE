@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task5_css编码</title>
+    <style>
+        body,html,div{margin:0;padding: 0;}
+        body{background-color: #dedede;}
+        #header{width: 100%;height: 60px;background-color: black;}
+        #header img{padding: 10px 0 0 20px;}
+        #header ul{float:right;}
+        #header ul li {float: left;margin:0px 40px 0 0;list-style-type: none;color: white;font-size: 14px;}
+        #center .left,#center .right{background-color: white;}
+        #center .left{width: 860px;float: left;margin: 20px 20px 0 20px;padding:20px;border: 1px solid #cbcbcb;}
+        #center .left ul li{list-style-type: decimal;}
+        #center .left table {width:95%;border: 1px solid black;}
+        #center .left table tr{border: 1px solid black;}
+        .bg_black{background-color: black;color: white;}
+        .bg_gray{background-color: #cccccc;color: black;}
+        /*#center .left a{text-decoration:underline;color: blue;}*/
+        #center .right{float:right;width: 26%;margin:20px 20px 0 0px;padding-left: 20px;}
+        #center .right h3{border-left: 3px solid #cccccc;}
+        #center .right .table_text th{text-align: right;}
+        #center .right .table_text td{text-align: left;color: #ccc;}
+        #center .right .table_text input{width: 150px;border: 1px solid #cccccc;}
+        #center .right .table_btn th{text-align: right;width: 110px;}
+        .btn{width: 260px;height: 40px;border:0;border-radius: 5px;background-color:#3355d0;margin: 10px 20px 20px 40px;color: white;font-size: 16px;}
+        .pic div{float: left;}
+        .pic div p{margin: 0 0 0 20px;}
+        .pic img{width: 100px;height: 100px;padding: 10px;}
+        #footer{float:left;width:100%;height:60px;background-color: black;color: white;}
+        #footer p{text-align: center;}
+    </style>
+</head>
+<body>
+<div>
+    <div id="header">
+        <img src="img/baidu_logo.png" />
+        <ul>
+            <li>导航链接一</li><li>导航链接二</li><li>导航链接三</li><li>导航链接四</li>
+        </ul>
+    </div>
+    <div id="center">
+        <div class="left">
+            <h3>文章的一级标题</h3>
+            <h4>文章的二级标题</h4>
+            <h5>文章的作者 文章发表时间</h5>
+            <p>百度前端技术学院的课程任务是由<a href="#">百度前端工程师</a>专为对前端不同掌握程度的同学设计。我们尽力保证课程内容的质量
+                以及学习难度的合理性，但即使如此，真正决定课程效果的，还是你的每一次思考和实践。
+                课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿
+                的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。那些最终没有
+                被我们采纳的方案，同样也可以帮助我们学到很多知识。
+            </p>
+            <img src="img/15.png" />
+            <p>所以，我们列出的参考资料未必是实现需求所必须的。有的时候， 实现题目的要求很简单，甚至参考资料里就有，但是背
+                后的思考和亲手去实践却是任务最关键的一部分。在学习这些资料时，  要多思考，多提问，多质疑。相信通过和小伙伴们
+                的交流，能让你的学习事半功倍。</p>
+        </div>
+        <div class="right">
+            <h3>这是一个侧边栏</h3>
+            <table class="table_text">
+                <tr><th>请输入邮箱地址</th><td><input type="text" /></td></tr>
+                <tr><th></th><td>邮箱地址请按要求格式输入</td></tr>
+                <tr><th>请输入密码</th><td><input type="text"></td></tr>
+                <tr><th>请重复输入密码</th><td><input type="text"></td></tr>
+                <tr><th></th><td>密码为6-16位英文数字</td></tr>
+            </table>
+            <table class="table_btn">
+                <tr><th>性别</th><td><input type="radio" value="男" name="sex"/>男<input type="radio" value="女" name="sex"/>女</td></tr>
+                <tr><th>城市</th><td><select><option>北京</option><option>上海</option></select></td></tr>
+                <tr><th>爱好</th><td><input type="checkbox" name="运动"/>运动<input type="checkbox" name="艺术"/>艺术<input type="checkbox" name="科学"/>科学</td></tr>
+                <tr><th>个人描述</th><td><textarea></textarea></td></tr>
+            </table>
+            <input type="button" value="确认提交" class="btn"/>
+        </div>
+        <div class="left">
+            <h3>另一篇文章的一级标题</h3>
+            <h4>文章的二级标题</h4>
+            <h5>文章的作者 文章发表时间</h5>
+            <p>百度前端技术学院的课程任务是由<a href="#">百度前端工程师</a>专为对前端不同掌握程度的同学设计。我们尽力保证课程内容的质量
+                以及学习难度的合理性，但即使如此，真正决定课程效果的，还是你的每一次思考和实践。
+                课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿
+                的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。那些最终没有
+                被我们采纳的方案，同样也可以帮助我们学到很多知识。
+            </p>
+            <img src="img/15.png" />
+        </div>
+        <div class="left pic">
+            <h3>图片</h3>
+            <div><p>好看的图片</p><img src="img/15.png" /></div>
+            <div><p>好看的图片</p><img src="img/15.png" /></div>
+            <div><p>好看的图片</p><img src="img/15.png" /></div>
+            <div><p>好看的图片</p><img src="img/15.png" /></div>
+            <div><p>好看的图片</p><img src="img/15.png" /></div>
+            <div><p>好看的图片</p><img src="img/15.png" /></div>
+            <div><p>好看的图片</p><img src="img/15.png" /></div>
+            <div><p>好看的图片</p><img src="img/15.png" /></div>
+        </div>
+        <div class="left">
+            <h3>最后一篇文章的一级标题</h3>
+            <h4>文章的二级标题</h4>
+            <h5>文章的作者 文章发表时间</h5>
+            <ul>
+                <li>排名一</li><li>排名二</li><li>排名三</li>
+            </ul>
+            <p>表格</p>
+            <table>
+                <tr class="bg_black">
+                    <td>表格内容</td><td>表格内容</td><td>操作</td>
+                </tr>
+                <tr>
+                    <td>表格内容</td><td>表格内容</td><td><a href="#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表格内容</td><td>表格内容</td><td><a href="#">操作</a></td>
+                </tr>
+                <tr>
+                    <td class="bg_gray">总计</td>
+                    <td colspan="2" class="bg_gray">1000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="footer">
+        <p>版权所有</p>
+    </div>
+</div>
+</body>
+</html>

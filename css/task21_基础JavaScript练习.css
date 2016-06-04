@@ -1,0 +1,13 @@
+*{margin: 0;padding: 0}
+#div1{margin: 10px 0 0 50px;height:200px;}
+#div1 h3{margin-bottom: 10px;}
+#tag1{margin: 5px 0;}
+#tag1 li{height:30px;line-height:30px;float: left;list-style-type: none;padding: 2px 5px;margin: 2px 5px;background-color: orange;}
+.blue{background-color: deepskyblue;}
+#div2{margin: 10px 0 0 50px;height:200px;}
+#div2 h3{margin-bottom: 10px;}
+#div2 textarea{}
+#tag2{margin: 5px 0;}
+#tag2 li{height:30px;line-height:30px;float: left;list-style-type: none;padding: 2px 5px;margin: 2px 5px;background-color: orange;}
+
+
